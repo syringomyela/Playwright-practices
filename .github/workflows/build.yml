@@ -20,7 +20,7 @@ jobs:
       run: npm install  # or `yarn install` if you're using Yarn
 
     - name: Install Playwright
-      run: npm install -g playwright@latest  # This installs the required browsers for Playwright
+      run: npm install -g playwright@latest && playwright install --with-deps # This installs the required browsers for Playwright
 
     - name: Run Playwright tests
       run: npx playwright test tests/bookstoreAPITest.spec.js # This will run your Playwright tests

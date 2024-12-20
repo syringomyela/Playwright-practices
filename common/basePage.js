@@ -19,7 +19,7 @@ class BasePage {
   }
 
   getElementByRole(selector) {
-    return this.page.getByRole(selector);
+    return this.page.getByRole(selector)
   }
 
   getElementByLabel(selector) {

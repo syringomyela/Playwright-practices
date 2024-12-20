@@ -57,7 +57,7 @@ class baseAPIInteraction {
       bookTitles.push(book.title);
       booksIsbns.push({ isbn: book.isbn });
     });
-    return { bookTitles, booksIsbns };
+    return { bookTitles, booksIsbns }
   }
 
   async addBooksToProfile() {
